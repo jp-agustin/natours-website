@@ -58,19 +58,19 @@ body {
 
 /* LOGO */
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
 
-.logo {
+.header__logo {
   height: 3.5rem;
 }
 
 /* HEADER BOX */
 
-.heading-box {
+.header__heading-box {
   text-align: center;
   position: absolute;
   top: 40%;
@@ -87,7 +87,7 @@ body {
   backface-visibility: hidden;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
@@ -96,7 +96,7 @@ body {
   animation: moveInLeft 1s ease-out;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
@@ -127,8 +127,8 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
 }
 
-.btn-white:link,
-.btn-white:visited {
+.btn--white:link,
+.btn--white:visited {
   background-color: #fff;
   color: #777;
 }
@@ -151,11 +151,11 @@ body {
   opacity: 0;
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: #fff;
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
