@@ -7,6 +7,7 @@ Sample website using the following web development technologies/concepts:
 * CSS3
   * Keyframes
   * BEM Architecture
+  * 7-1 Architecture
 * SASS
   * SCSS syntax
   * Variables, Nesting
