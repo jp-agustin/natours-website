@@ -15,3 +15,5 @@ Sample website using the following web development technologies/concepts:
   * Mixins, Extends
   * Functions
 * NPM
+
+*Credits: A project website under the Advanced CSS and Sass course by Jonas Schmedtmann.*
