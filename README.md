@@ -9,6 +9,7 @@ Sample website using the following web development technologies/concepts:
   * BEM Architecture
   * 7-1 Architecture
   * Custom Grid with Floats
+  * Responsive design using Media Queries
 * SASS
   * SCSS syntax
   * Variables, Nesting
