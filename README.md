@@ -10,6 +10,7 @@ Sample website using the following web development technologies/concepts:
   * 7-1 Architecture
   * Custom Grid with Floats
   * Responsive design using Media Queries
+  * Responsive Images (Art Direction, Density and Resolution Switching)
 * SASS
   * SCSS syntax
   * Variables, Nesting
