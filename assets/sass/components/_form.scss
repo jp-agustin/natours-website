@@ -43,13 +43,15 @@
     margin-top: 0.7rem;
     display: block;
     transition: all 0.3s;
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 
   &__input:placeholder-shown + &__label {
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-4rem);
+    -webkit-transform: translateY(-4rem);
+            transform: translateY(-4rem);
   }
 
   &__radio-group {
@@ -93,7 +95,8 @@
       top: 50%;
       left: 50%;
       background-color: $color-primary;
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
       opacity: 0;
       transition: opacity 0.2s;
     }

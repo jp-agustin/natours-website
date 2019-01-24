@@ -15,11 +15,13 @@
   }
 
   &:hover {
-    transform: translateY(-0.3rem);
+    -webkit-transform: translateY(-0.3rem);
+            transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba($color-black,0.2);
 
     &::after {
-      transform: scaleX(1.4) scaleY(1.6);
+      -webkit-transform: scaleX(1.4) scaleY(1.6);
+              transform: scaleX(1.4) scaleY(1.6);
       opacity: 0;
     }
   }
@@ -27,7 +29,8 @@
   &:active,
   &:focus {
     outline: none;
-    transform: translateY(-0.1rem);
+    -webkit-transform: translateY(-0.1rem);
+            transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black,0.2);
   }
 
@@ -70,8 +73,10 @@
   }
 
   &--animated {
-    animation: moveInBottom 0.5s ease-out 0.75s;
-    animation-fill-mode: backwards;
+    -webkit-animation: moveInBottom 0.5s ease-out 0.75s;
+            animation: moveInBottom 0.5s ease-out 0.75s;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
   }
 }
 
@@ -91,11 +96,13 @@
     color: $color-white;
     background-color: $color-primary;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
   }
 
   &:active {
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }

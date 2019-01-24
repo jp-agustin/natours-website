@@ -11,6 +11,8 @@ Sample website using the following web development technologies/concepts:
   * Custom Grid with Floats
   * Responsive design using Media Queries
   * Responsive Images (Art Direction, Density and Resolution Switching)
+  * Browser compatibility
+  * Graceful degradation for Browser compatibility
 * SASS
   * SCSS syntax
   * Variables, Nesting

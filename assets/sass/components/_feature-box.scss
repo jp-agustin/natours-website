@@ -12,7 +12,8 @@
   }
 
   &:hover {
-    transform: translateY(-1.5rem) scale(1.03);
+    -webkit-transform: translateY(-1.5rem) scale(1.03);
+            transform: translateY(-1.5rem) scale(1.03);
   }
 
   &__icon {

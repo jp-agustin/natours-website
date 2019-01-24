@@ -7,7 +7,8 @@
   padding: 6rem;
   padding-left: 9rem;
   font-size: $default-font-size;
-  transform: skewX(-12deg);
+  -webkit-transform: skewX(-12deg);
+          transform: skewX(-12deg);
 
   @include respond(tab-port) {
     width: 100%;
@@ -16,39 +17,52 @@
   }
 
   @include respond(phone) {
-    transform: skewX(0);
+    -webkit-transform: skewX(0);
+            transform: skewX(0);
   }
 
   &__shape {
     width: 15rem;
     height: 15rem;
     float: left;
-    transform: translateX(-3rem) skewX(12deg);
+    -webkit-transform: translateX(-3rem) skewX(12deg);
+            transform: translateX(-3rem) skewX(12deg);
     position: relative;
+    overflow: hidden;
+    border-radius: 50%;
 
     @include respond(phone) {
-      transform: translateX(-3rem) skewX(0);
+      -webkit-transform: translateX(-3rem) skewX(0);
+              transform: translateX(-3rem) skewX(0);
     }
 
-    -webkit-shape-outside: circle(50% at 50% 50%);
-            shape-outside: circle(50% at 50% 50%);
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      -webkit-shape-outside: circle(50% at 50% 50%);
+              shape-outside: circle(50% at 50% 50%);
 
-    -webkit-clip-path: circle(50% at 50% 50%);
-            clip-path: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+              clip-path: circle(50% at 50% 50%);
+
+      border-radius: 0;
+    }
   }
 
   &__img {
     height: 100%;
-    transform: translateX(-4rem) scale(1.4);
-    backface-visibility: hidden;
+    -webkit-transform: translateX(-4rem) scale(1.4);
+            transform: translateX(-4rem) scale(1.4);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     transition: all 0.5s;
   }
 
   &__text {
-    transform: skewX(12deg);
+    -webkit-transform: skewX(12deg);
+            transform: skewX(12deg);
 
     @include respond(phone) {
-      transform: skewX(0);
+      -webkit-transform: skewX(0);
+              transform: skewX(0);
     }
   }
 
@@ -56,23 +70,28 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 20%);
+    -webkit-transform: translate(-50%, 20%);
+            transform: translate(-50%, 20%);
     color: $color-white;
     text-transform: uppercase;
     font-size: 1.7rem;
     text-align: center;
     opacity: 0;
     transition: all 0.5s;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
   }
 
   &:hover &__caption {
     opacity: 1;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 
   &:hover &__img {
-    transform: translateX(-4rem) scale(1);
-    filter: blur(0.3rem) brightness(80%);
+    -webkit-transform: translateX(-4rem) scale(1);
+            transform: translateX(-4rem) scale(1);
+    -webkit-filter: blur(0.3rem) brightness(80%);
+            filter: blur(0.3rem) brightness(80%);
   }
 }
